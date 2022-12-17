@@ -1,0 +1,36 @@
+#1.izracunati ukupnu vrednost stana  ukoliko virjedi : (do 50kv 1500/kv,50-80 13000kv,80+ 1000kv)
+vr=int(input("Unesite broj kvadrata : "))
+if(vr<50):
+    print("Cijena je " , (vr*1500))
+elif(50<vr<80):
+    print("Cijena je ", (vr * 1300))
+elif(80<vr<100):
+    print("Cijena je ", (vr * 1000))
+
+#2.Da li u recenici "Da li danas pada kisa ?" postoji rijec sunce
+rec="Da li danas pada kisa ?"
+rijec="sunce"
+if rijec in rec :
+    print("Da")
+else :
+    print("Ne")
+
+#3.Provjeriti da li je uneseni broj paran ili neparan i ispisati poruku
+var=int(input("Unesite broj : "))
+if var%2==0 :
+    print("Broj je paran.")
+else :
+    print("Broj nije paran.")
+
+
+#4.Naci prvo slovo u recenici "Da li danas pada kisa ?"
+rec="Da li danas pada kisa ?"
+print(rec[0])
+
+#5.Naci zadnje slovo u recenici "Da li danas pada kisa ?"
+rec="Da li danas pada kisa"
+print("Zadnje slovo je : ",rec[len(rec)-1])
+
+#6.Prebrojati koliko se puta slovo 'a' pojavljuje u recenici
+rec="Da li danas pada kisa ?"
+print("U recenici slovo a se pojavljuje : " , rec.count("a") , " puta")
